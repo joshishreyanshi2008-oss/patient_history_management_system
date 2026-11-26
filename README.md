@@ -1,95 +1,104 @@
-Patient Medical History Record Keeper
-About the Project
-The Patient Medical History Record Keeper is a simple console-based hospital management project developed using C++.
 
-The main purpose of this project is to store and manage the medical visit history of patients.
+# Patient Medical History Record Keeper
 
-Whenever a patient visits a hospital, some important details need to be recorded, such as the visit date, diagnosis (health problem), prescribed medicines, and consultation fee.
+## About the Project
 
-This program helps maintain these records in an organized way. It also allows the user to add new visits, view the patient's complete medical history, find the most frequent diagnosis, and calculate the total consultation fees paid.
+The Patient Medical History Record Keeper is a console-based hospital management project developed using C++.
 
-The records are saved in text files so that previous information is not lost when the program is closed.
+It is designed to maintain and manage the medical visit history of patients. It stores patient details, doctor details, medical departments, diagnosis, prescribed medicines, visit dates, and consultation fees.
 
-Problem Statement
-In hospitals, maintaining the medical history of patients is important. Keeping track of previous visits, diagnoses, prescribed medicines, and consultation fees can become difficult when records are not properly organized.
+The system allows patients to have multiple visits with different doctors and maintains their medical history.
 
-This project provides a simple solution by creating a C++ console application that stores patient visit details and allows users to retrieve and analyze the saved medical history.
+## Problem Statement
 
-Project Objectives
-The main objectives of this project are:
+In hospitals and clinics, maintaining patient medical records is important.
 
-To store patient visit details using C++ structures.
-To maintain multiple visit records using an array of structures.
-To save new visit records in a file without deleting previous records.
-To read and display the complete medical history of a patient.
-To find the most frequently occurring diagnosis.
-To calculate the total consultation fees paid by a patient.
-To handle missing files and incorrectly formatted records.
-Key Features
-Store Visit Details: Records the visit date, diagnosis code, prescribed medicines, and consultation fee.
+This project provides a simple system to store patient visit records, save previous history, and display medical information whenever required.
 
-Add New Visits: Allows new medical visits to be added without removing previously saved records.
+## Project Objectives
 
-View Medical History: Reads the saved records from a file and displays the complete visit history in a formatted table.
+- To maintain patient medical history.
+- To store details of doctors and their specialities.
+- To manage visits across different medical departments.
+- To save new visit records without deleting previous records.
+- To display complete medical history.
+- To find the most frequent diagnosis.
+- To calculate the total consultation fees.
 
-Find Most Frequent Diagnosis: Checks all recorded visits and identifies the diagnosis that appears most frequently.
+## Key Features
 
-Calculate Total Fees: Calculates the total consultation fees paid across all recorded visits.
+- Store patient name and ID.
+- Maintain a predefined list of doctors.
+- Display doctors with their specialities and departments.
+- Add multiple visits for a patient.
+- Store visit date, diagnosis, medicine, and fees.
+- View complete patient medical history.
+- Find the most frequent diagnosis.
+- Calculate total consultation fees.
+- Save records permanently using file handling.
 
-Error Handling: Handles situations such as missing files and incorrectly formatted records without terminating the program unexpectedly.
+## OOPS Concepts Used
 
-OOPS Concepts Used
-This project focuses on understanding and implementing the following C++ concepts:
+- Structures
+- Classes and Objects
+- Encapsulation
+- Constructors
+- Arrays of Structures
+- File Handling
+- Exception Handling
+- Loops and Conditional Statements
 
-Structures: Used to store related information about dates and individual visits.
-Classes and Objects: Used to organize patient information and medical history operations.
-Array of Structures: Used to manage multiple patient visit records.
-File Handling: Used to save and retrieve medical history records from text files.
-Exception Handling: Used to handle errors and unexpected situations.
-I/O Formatting: Used to display records in a clear and organized format.
-Suggested Classes and Structures
-Component	Purpose
-Date	Stores the day, month, and year of a visit.
-Visit	Stores visit date, diagnosis, medicines, and consultation fee.
-Patient	Represents a patient and maintains patient-related information.
-HistoryManager	Manages saving, reading, and processing medical history records.
-Technologies Used
-Programming Language: C++
-Compiler: GCC / G++
-Code Editor: Visual Studio Code
-Version Control: Git and GitHub
-Data Storage: Text Files
-How the Program Works
-The program will work through a console-based interface.
+## Suggested Classes and Structures
 
-The user enters the required patient visit details.
-The program stores the visit information.
-New visit records are added to the existing history file.
-The user can view the complete medical history.
-The program can calculate the most frequent diagnosis and total consultation fees.
-The saved records remain available for future use.
-Expected Output
-The program is expected to display:
+| Name | Purpose |
+|---|---|
+| Date | Stores visit date |
+| Doctor | Stores doctor name, speciality, and department |
+| Visit | Stores details of one patient visit |
+| Patient | Manages patient details and medical history |
 
-Patient medical history.
-Visit dates and diagnosis details.
-Prescribed medicines and consultation fees.
-Most frequent diagnosis.
-Total consultation fees paid.
-Learning Outcomes
-Through this project, I aim to understand and improve my knowledge of:
+## Technologies Used
 
-C++ programming.
-Object-Oriented Programming concepts.
-Structures, classes, and objects.
-Arrays and data management.
-File handling and data storage.
-Exception handling.
-Writing simple and organized programs.
-Project Status
+- Programming Language: C++
+- IDE: Visual Studio Code
+- Compiler: GCC (MinGW)
+- Concepts: Object-Oriented Programming and File Handling
+
+## How the Program Works
+
+1. The user enters patient details.
+2. The system displays the available doctors.
+3. The user selects a doctor.
+4. Visit details are entered.
+5. The system saves the visit record.
+6. Previous medical history can be viewed.
+7. The system calculates total fees and finds the most frequent diagnosis.
+
+## Expected Output
+
+The program provides a menu-based interface with the following options:
+
+1. Add New Visit
+2. View Medical History
+3. Find Most Frequent Diagnosis
+4. Calculate Total Fees
+5. Exit
+
+## Learning Outcomes
+
+Through this project, we aim to understand:
+
+- Basic Object-Oriented Programming in C++.
+- Structures and arrays.
+- Classes, objects, and constructors.
+- File handling for permanent data storage.
+- Managing and displaying patient records.
+- Basic exception handling.
+
+## Project Status
+
 Currently in Development.
 
-The project is being developed step by step. Features and documentation will be updated as the implementation progresses.
+## Author
 
-Author
-Developed as an academic C++ OOPS project.
+Shreyanshi Joshi
